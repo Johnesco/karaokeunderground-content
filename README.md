@@ -6,23 +6,33 @@ The site content for the karaokeunderground.com revamp, for editing and improvin
 
 It started as the clean content from the 2026-09-23 snapshot ([#6](https://github.com/Johnesco/karaokeunderground/issues/6), [#7](https://github.com/Johnesco/karaokeunderground/issues/7)). The first commit holds that content unchanged, so the history shows every edit since.
 
+The same day it was converted into the core files in `content/` ([#10](https://github.com/Johnesco/karaokeunderground/issues/10)), in the formats that [ADR-002](https://github.com/Johnesco/karaokeunderground/blob/main/docs/adr/002-core-file-formats.md) sets. That commit changed the format, not the content. Fixes to the content come in the commits after it.
+
 The snapshot itself stays frozen and read-only in the public repo's gitignored `snapshot/` folder, on John's machine. That includes its reference copy of the old site.
 
 ## What's here
 
 | Path | What it is |
 |---|---|
-| `songlist.csv` | The master songlist: artist, title, album |
-| `themed-songlists.csv` | The 8 themed songlists from blog posts, in one format |
-| `shows.json` | Upcoming shows from the homepage and the Calendar page |
-| `pages/`, `posts/` | One HTML file per page and per post |
-| `media/` | The uploaded images, plus the theme's logo and icons in `media/theme/` |
-| `index.json` | The snapshot's map of all of it (old URLs, dates, files and checks) as of 2026-09-23. It doesn't update as the content changes |
+| `content/` | The core files the site reads: everything that changes lives here |
+| `content/songlist.csv` | The master songlist: Artist, Title, Album, Themes, Tags |
+| `content/pages/`, `content/posts/` | One Markdown file per page and per post |
+| `content/images/` | The images, in year/month folders, with the logo and icons in `site/` |
+| `shows.json` | The upcoming shows from the old homepage and Calendar page, as the snapshot found them. They become a core file once we decide how events get updated |
 
-Open the CSVs as UTF-8. In Excel, use Data → From Text/CSV.
+The snapshot's `index.json` (old URLs, dates and image IDs) and `themed-songlists.csv` (the 8 themed lists, parsed from their posts) aren't needed now. Both are in this repo's first commit and in the frozen snapshot.
+
+## Editing the core files
+
+The formats are in ADR-002 and the public repo's CLAUDE.md, under Data Formats. In short:
+
+- **songlist.csv:** keep the first row as it is. Themes and Tags can be blank, or hold several values separated by semicolons, like `sad; scary`. The theme `unlisted` takes a song off every list without deleting it. Save it as UTF-8 (in Excel, "CSV UTF-8"), and open it the same way (in Excel, Data → From Text/CSV).
+- **Pages and posts:** plain Markdown, with no HTML. A line break inside a paragraph ends with a backslash. Each file starts with its front matter: a title, a date, and, on the converted files, `updated` and `old_url`.
+- **Images:** put a new one in the folder for its year and month, and show it with a path from the post, like `![What the image shows](../images/2026/12/flyer.jpg)`.
+
+Check the files before committing: run `npm test` in the public repo, or `npm run check` for the content alone. It needs no network.
 
 ## Working here
 
 - Tickets live in the public repo. Reference them in commit messages as `Johnesco/karaokeunderground#N: description`.
 - Keep it private. Don't paste this content into the public repo, its issues or its commit messages.
-- Building the site from this content waits on ADR-001 ([#2](https://github.com/Johnesco/karaokeunderground/issues/2)), which picks the stack.
