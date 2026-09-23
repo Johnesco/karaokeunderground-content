@@ -1,0 +1,105 @@
+{
+  "taken": "2026-09-23T17:34:31Z",
+  "note": "The site gives no years. Each date uses the nearest year where the weekday fits.",
+  "homepage": [
+    {
+      "date": "2026-09-26",
+      "weekday": "Saturday",
+      "venue": "Jardín x Contreras",
+      "details": "Laredo, TX",
+      "link": "https://www.facebook.com/events/1586429792836968",
+      "text": "Saturday, 9/26 - Jardín x Contreras - Laredo, TX"
+    },
+    {
+      "date": "2026-10-03",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": null,
+      "link": "https://www.facebook.com/events/4679574695610644/",
+      "text": "Saturday, 10/3 - Knomad Bar"
+    },
+    {
+      "date": "2026-10-06",
+      "weekday": "Tuesday",
+      "venue": "Hotel Vegas",
+      "details": "Gilmore Girls Party",
+      "link": "https://www.facebook.com/events/1783624376288615/",
+      "text": "Tuesday, 10/6 - Hotel Vegas - Gilmore Girls Party"
+    },
+    {
+      "date": "2026-11-07",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": null,
+      "link": "https://www.facebook.com/events/4679574695610644/",
+      "text": "Saturday, 11/7 - Knomad Bar"
+    },
+    {
+      "date": "2026-11-13",
+      "weekday": "Friday",
+      "venue": "Stoney's Good Time Ranch",
+      "details": null,
+      "link": "https://www.facebook.com/events/4679574695610644/",
+      "text": "Friday, 11/13 - Stoney's Good Time Ranch"
+    },
+    {
+      "date": "2026-12-05",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": null,
+      "link": "https://www.facebook.com/events/4679574695610644/",
+      "text": "Saturday, 12/5 - Knomad Bar"
+    },
+    {
+      "date": "2026-12-26",
+      "weekday": "Saturday",
+      "venue": "Drinks Lounge",
+      "details": "SAD SONGS ONLY",
+      "link": null,
+      "text": "Saturday, 12/26 - Drinks Lounge - SAD SONGS ONLY"
+    },
+    {
+      "date": "2027-01-02",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": null,
+      "link": "https://www.facebook.com/events/4679574695610644/",
+      "text": "Saturday, 1/2 - Knomad Bar"
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2026-08-01",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": "First Saturdays",
+      "link": "https://www.facebook.com/events/1332143352364072",
+      "text": "Saturday 8/1 – Knomad Bar – First Saturdays",
+      "past": true
+    },
+    {
+      "date": "2026-09-05",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": "First Saturdays",
+      "link": "https://www.facebook.com/events/1263809285722206/",
+      "text": "Saturday 9/5 – Knomad Bar – First Saturdays",
+      "past": true
+    },
+    {
+      "date": "2026-10-03",
+      "weekday": "Saturday",
+      "venue": "Knomad Bar",
+      "details": "First Saturdays",
+      "link": "https://www.facebook.com/events/4679574695610644/",
+      "text": "Saturday 10/3 – Knomad Bar – First Saturdays",
+      "past": false
+    }
+  ],
+  "checks": [
+    "The homepage's 2026-12-26 show (Drinks Lounge) has no link",
+    "5 homepage shows link to the same event, https://www.facebook.com/events/4679574695610644/: 2026-10-03, 2026-11-07, 2026-11-13, 2026-12-05, 2027-01-02",
+    "The Calendar page still lists 2 past show(s): 2026-08-01, 2026-09-05",
+    "On the homepage but not the Calendar page: 2026-09-26, 2026-10-06, 2026-11-07, 2026-11-13, 2026-12-05, 2026-12-26, 2027-01-02"
+  ]
+}

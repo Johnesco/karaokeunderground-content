@@ -1,0 +1,9 @@
+# LF everywhere, so Windows checkouts match what's committed
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
