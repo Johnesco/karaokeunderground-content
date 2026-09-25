@@ -1,6 +1,8 @@
 # Karaoke Underground: content working copy
 
-The site content for the karaokeunderground.com revamp, for editing and improving. It's Karaoke Underground's content, so it lives in this private repo. It never goes in the public one, [Johnesco/karaokeunderground](https://github.com/Johnesco/karaokeunderground).
+The site content for the karaokeunderground.com revamp, for editing and improving. It's Karaoke Underground's content, so it lives in this repo, apart from the code in [Johnesco/karaokeunderground](https://github.com/Johnesco/karaokeunderground), and never goes in that one.
+
+This repo became public on 2026-09-24, so that the revamp's public preview at https://johnesco.github.io/karaokeunderground/ can build from it ([ADR-010](https://github.com/Johnesco/karaokeunderground/blob/main/docs/adr/010-preview-on-github-pages.md)). A scan of its whole history first found no phone numbers, email addresses, logins or plugin versions. The content itself was already public on karaokeunderground.com.
 
 ## Where it came from
 
@@ -35,4 +37,4 @@ Check the files before committing: run `npm test` in the public repo, or `npm ru
 ## Working here
 
 - Tickets live in the public repo. Reference them in commit messages as `Johnesco/karaokeunderground#N: description`.
-- Keep it private. Don't paste this content into the public repo, its issues or its commit messages.
+- Keep it apart from the code. Don't paste this content into the code repo, its issues or its commit messages, and keep personal and admin details out of both repos.
