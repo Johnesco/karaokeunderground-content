@@ -14,3 +14,13 @@ We have shows about once every month around our hometown of Austin, TX. We love 
 [Saturday 10/3 – Knomad Bar – First Saturdays](https://www.facebook.com/events/4679574695610644/)
 
 Past shows, tours and old news are in the [posts archive](../posts/).
+
+# How to find out more
+
+Follow us for new shows and news:
+
+- [The Karaoke Underground on Facebook](https://www.facebook.com/people/The-Karaoke-Underground/100031017777100/)
+
+- [@karaokeunderground on Instagram](https://www.instagram.com/karaokeunderground/)
+
+- [@KUAustin on X](https://x.com/KUAustin)
